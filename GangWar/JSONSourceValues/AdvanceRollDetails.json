@@ -1,0 +1,130 @@
+[
+  {
+    "rollID": 1,
+    "min": 71,
+	"max": 72,
+    "updateItem": 1,
+    "aType": true,
+    "notes": "Move"
+  },
+  {
+    "rollID": 2,
+    "min": 73,
+	"max": 74,
+    "updateItem": 2,
+    "aType": true,
+    "notes": "Melee"
+  },
+  {
+    "rollID": 3,
+    "min": 75,
+	"max": 76,
+    "updateItem": 3,
+    "aType": true,
+    "notes": "Ranged"
+  },
+  {
+    "rollID": 4,
+    "min": 77,
+	"max": 78,
+    "updateItem": 4,
+    "aType": true,
+    "notes": "Strength"
+  },
+  {
+    "rollID": 5,
+    "min": 81,
+	"max": 82,
+    "updateItem": 5,
+    "aType": true,
+    "notes": "Toughness"
+  },
+  {
+    "rollID": 6,
+    "min": 83,
+	"max": 84,
+    "updateItem": 6,
+    "aType": true,
+    "notes": "Alertness"
+  },
+  {
+    "rollID": 7,
+    "min": 85,
+	"max": 86,
+    "updateItem": 7,
+    "aType": true,
+    "notes": "Charisma"
+  },
+    {
+    "rollID": 8,
+    "min": 87,
+	"max": 88,
+    "updateItem": 8,
+    "aType": true,
+    "notes": "Speed"
+  },
+  {
+    "rollID": 9,
+    "min": 17,
+	"max": 24,
+    "updateItem": 2,
+    "aType": false,
+    "notes": "Melee"
+  },
+  {
+    "rollID": 10,
+    "min": 25,
+	"max": 32,
+    "updateItem": 3,
+    "aType": false,
+    "notes": "Ranged"
+  },
+  {
+    "rollID": 11,
+    "min": 33,
+	"max": 38,
+    "updateItem": 4,
+    "aType": false,
+    "notes": "Strength"
+  },
+  {
+    "rollID": 12,
+    "min": 11,
+	"max": 16,
+    "updateItem": 1,
+    "aType": false,
+    "notes": "Move"
+  },
+  {
+    "rollID": 13,
+    "min": 63,
+	"max": 68,
+    "updateItem": 8,
+    "aType": false,
+    "notes": "Speed"
+  },
+  {
+    "rollID": 14,
+    "min": 41,
+	"max": 46,
+    "updateItem": 5,
+    "aType": false,
+    "notes": "Toughness"
+  },
+  {
+    "rollID": 15,
+    "min": 47,
+	"max": 54,
+    "updateItem": 6,
+    "aType": false,
+    "notes": "Alertness"
+  },
+  {
+    "rollID": 16,
+    "min": 55,
+	"max": 62,
+    "updateItem": 7,
+    "aType": false,
+    "notes": "Charisma"
+  }
+]

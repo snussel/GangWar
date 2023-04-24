@@ -1,0 +1,45 @@
+{
+  "Person": {
+    "Body": {
+      "level": 1,
+      "description": "Noob",
+      "numBattles": 5,
+      "cost": 15,
+      "startingEquipment": [
+        0,
+        1,
+        2
+      ],
+      "maxQuality": 1
+    },
+    "NoBody": {
+      "level": 2,
+      "description": "Basic",
+      "numBattles": 15,
+      "cost": 50,
+      "startingEquipment": [
+        0,
+        1,
+        1,
+        2,
+        2
+      ],
+      "maxQuality": 2
+    },
+    "SomeBody": {
+      "level": 3,
+      "description": "Elite",
+      "numBattles": 25,
+      "cost": 100,
+      "startingEquipment": [
+        0,
+        1,
+        1,
+        2,
+        2,
+        3
+      ],
+      "maxQuality": 3
+    }
+  }
+}

@@ -1,0 +1,450 @@
+[
+  {
+    "skillId": 1,
+    "name": "Burst",
+    "Description": "",
+    "skillType": 1,
+    "roll": 1
+  },
+  {
+    "skillId": 2,
+    "name": "Charge",
+    "Description": "",
+    "skillType": 1,
+    "roll": 2
+  },
+  {
+    "skillId": 3,
+    "name": "Climb",
+    "Description": "",
+    "skillType": 1,
+    "roll": 3
+  },
+  {
+    "skillId": 4,
+    "name": "Deployment",
+    "Description": "Deploy up to your move score outside of the zone ",
+    "skillType": 1,
+    "roll": 4
+  },
+  {
+    "skillId": 5,
+    "name": "Dodge",
+    "Description": "",
+    "skillType": 1,
+    "roll": 5
+  },
+  {
+    "skillId": 6,
+    "name": "Jump",
+    "Description": "",
+    "skillType": 1,
+    "roll": 6
+  },
+  {
+    "skillId": 7,
+    "name": "Slide",
+    "Description": "",
+    "skillType": 1,
+    "roll": 7
+  },
+  {
+    "skillId": 8,
+    "name": "Sprint",
+    "Description": "",
+    "skillType": 1,
+    "roll": 8
+  },
+  {
+    "skillId": 9,
+    "name": "Skill 1",
+    "Description": "",
+    "skillType": 3,
+    "roll": 1
+  },
+  {
+    "skillId": 10,
+    "name": "Skill 2",
+    "Description": "",
+    "skillType": 3,
+    "roll": 2
+  },
+  {
+    "skillId": 11,
+    "name": "Skill 3",
+    "Description": "",
+    "skillType": 3,
+    "roll": 3
+  },
+  {
+    "skillId": 12,
+    "name": "Skill 4",
+    "Description": "",
+    "skillType": 3,
+    "roll": 4
+  },
+  {
+    "skillId": 13,
+    "name": "Skill 5",
+    "Description": "",
+    "skillType": 3,
+    "roll": 5
+  },
+  {
+    "skillId": 14,
+    "name": "Skill 6",
+    "Description": "",
+    "skillType": 3,
+    "roll": 6
+  },
+  {
+    "skillId": 15,
+    "name": "Skill 7",
+    "Description": "",
+    "skillType": 3,
+    "roll": 7
+  },
+  {
+    "skillId": 16,
+    "name": "Skill 8",
+    "Description": "",
+    "skillType": 3,
+    "roll": 8
+  },
+  {
+    "skillId": 17,
+    "name": "Skill 1",
+    "Description": "",
+    "skillType": 2,
+    "roll": 1
+  },
+  {
+    "skillId": 18,
+    "name": "Skill 2",
+    "Description": "",
+    "skillType": 2,
+    "roll": 2
+  },
+  {
+    "skillId": 19,
+    "name": "Skill 3",
+    "Description": "",
+    "skillType": 2,
+    "roll": 3
+  },
+  {
+    "skillId": 20,
+    "name": "Skill 4",
+    "Description": "",
+    "skillType": 2,
+    "roll": 4
+  },
+  {
+    "skillId": 21,
+    "name": "Skill 5",
+    "Description": "",
+    "skillType": 2,
+    "roll": 5
+  },
+  {
+    "skillId": 22,
+    "name": "Skill 6",
+    "Description": "",
+    "skillType": 2,
+    "roll": 6
+  },
+  {
+    "skillId": 23,
+    "name": "Skill 7",
+    "Description": "",
+    "skillType": 2,
+    "roll": 7
+  },
+  {
+    "skillId": 24,
+    "name": "Skill 8",
+    "Description": "",
+    "skillType": 2,
+    "roll": 8
+  },
+  {
+    "skillId": 25,
+    "name": "Skill 1",
+    "Description": "",
+    "skillType": 8,
+    "roll": 1
+  },
+  {
+    "skillId": 26,
+    "name": "Skill 2",
+    "Description": "",
+    "skillType": 8,
+    "roll": 2
+  },
+  {
+    "skillId": 27,
+    "name": "Skill 3",
+    "Description": "",
+    "skillType": 8,
+    "roll": 3
+  },
+  {
+    "skillId": 28,
+    "name": "Skill 4",
+    "Description": "",
+    "skillType": 8,
+    "roll": 4
+  },
+  {
+    "skillId": 29,
+    "name": "Skill 5",
+    "Description": "",
+    "skillType": 8,
+    "roll": 5
+  },
+  {
+    "skillId": 30,
+    "name": "Skill 6",
+    "Description": "",
+    "skillType": 8,
+    "roll": 6
+  },
+  {
+    "skillId": 31,
+    "name": "Skill 7",
+    "Description": "",
+    "skillType": 8,
+    "roll": 7
+  },
+  {
+    "skillId": 32,
+    "name": "Skill 8",
+    "Description": "",
+    "skillType": 8,
+    "roll": 8
+  },
+  {
+    "skillId": 33,
+    "name": "Skill 1",
+    "Description": "",
+    "skillType": 7,
+    "roll": 1
+  },
+  {
+    "skillId": 34,
+    "name": "Skill 2",
+    "Description": "",
+    "skillType": 7,
+    "roll": 2
+  },
+  {
+    "skillId": 35,
+    "name": "Skill 3",
+    "Description": "",
+    "skillType": 7,
+    "roll": 3
+  },
+  {
+    "skillId": 36,
+    "name": "Skill 4",
+    "Description": "",
+    "skillType": 7,
+    "roll": 4
+  },
+  {
+    "skillId": 37,
+    "name": "Skill 5",
+    "Description": "",
+    "skillType": 7,
+    "roll": 5
+  },
+  {
+    "skillId": 38,
+    "name": "Skill 6",
+    "Description": "",
+    "skillType": 7,
+    "roll": 6
+  },
+  {
+    "skillId": 39,
+    "name": "Skill 7",
+    "Description": "",
+    "skillType": 7,
+    "roll": 7
+  },
+  {
+    "skillId": 40,
+    "name": "Skill 8",
+    "Description": "",
+    "skillType": 7,
+    "roll": 8
+  },
+  {
+    "skillId": 41,
+    "name": "Skill 1",
+    "Description": "",
+    "skillType": 4,
+    "roll": 1
+  },
+  {
+    "skillId": 42,
+    "name": "Skill 2",
+    "Description": "",
+    "skillType": 4,
+    "roll": 2
+  },
+  {
+    "skillId": 43,
+    "name": "Skill 3",
+    "Description": "",
+    "skillType": 4,
+    "roll": 3
+  },
+  {
+    "skillId": 44,
+    "name": "Skill 4",
+    "Description": "",
+    "skillType": 4,
+    "roll": 4
+  },
+  {
+    "skillId": 45,
+    "name": "Skill 5",
+    "Description": "",
+    "skillType": 4,
+    "roll": 5
+  },
+  {
+    "skillId": 46,
+    "name": "Skill 6",
+    "Description": "",
+    "skillType": 4,
+    "roll": 6
+  },
+  {
+    "skillId": 47,
+    "name": "Skill 7",
+    "Description": "",
+    "skillType": 4,
+    "roll": 7
+  },
+  {
+    "skillId": 48,
+    "name": "Skill 8",
+    "Description": "",
+    "skillType": 4,
+    "roll": 8
+  },
+  {
+    "skillId": 49,
+    "name": "Skill 1",
+    "Description": "",
+    "skillType": 5,
+    "roll": 1
+  },
+  {
+    "skillId": 50,
+    "name": "Skill 2",
+    "Description": "",
+    "skillType": 5,
+    "roll": 2
+  },
+  {
+    "skillId": 51,
+    "name": "Skill 3",
+    "Description": "",
+    "skillType": 5,
+    "roll": 3
+  },
+  {
+    "skillId": 52,
+    "name": "Skill 4",
+    "Description": "",
+    "skillType": 5,
+    "roll": 4
+  },
+  {
+    "skillId": 53,
+    "name": "Skill 5",
+    "Description": "",
+    "skillType": 5,
+    "roll": 5
+  },
+  {
+    "skillId": 54,
+    "name": "Skill 6",
+    "Description": "",
+    "skillType": 5,
+    "roll": 6
+  },
+  {
+    "skillId": 55,
+    "name": "Skill 7",
+    "Description": "",
+    "skillType": 5,
+    "roll": 7
+  },
+  {
+    "skillId": 56,
+    "name": "Skill 8",
+    "Description": "",
+    "skillType": 5,
+    "roll": 8
+  },
+  {
+    "skillId": 57,
+    "name": "Skill 1",
+    "Description": "",
+    "skillType": 6,
+    "roll": 1
+  },
+  {
+    "skillId": 58,
+    "name": "Skill 2",
+    "Description": "",
+    "skillType": 6,
+    "roll": 2
+  },
+  {
+    "skillId": 59,
+    "name": "Skill 3",
+    "Description": "",
+    "skillType": 6,
+    "roll": 3
+  },
+  {
+    "skillId": 60,
+    "name": "Skill 4",
+    "Description": "",
+    "skillType": 6,
+    "roll": 4
+  },
+  {
+    "skillId": 61,
+    "name": "Skill 5",
+    "Description": "",
+    "skillType": 6,
+    "roll": 5
+  },
+  {
+    "skillId": 62,
+    "name": "Skill 6",
+    "Description": "",
+    "skillType": 6,
+    "roll": 6
+  },
+  {
+    "skillId": 63,
+    "name": "Skill 7",
+    "Description": "",
+    "skillType": 6,
+    "roll": 7
+  },
+  {
+    "skillId": 56,
+    "name": "Skill 8",
+    "Description": "",
+    "skillType": 6,
+    "roll": 8
+  }
+]

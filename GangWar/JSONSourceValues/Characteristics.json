@@ -1,0 +1,24 @@
+[
+  {
+    "type": "Min",
+    "move": 4,
+    "melee": 4,
+    "range": 4,
+    "strength": 4,
+    "toughness": 2,    
+    "alertness": 4,
+    "charisma": 4,
+    "speed": 4
+  },
+  {
+    "type": "Max",
+    "move": 6,
+    "melee": 8,
+    "range": 8,
+    "strength": 8,
+    "toughness": 7,    
+    "alertness": 7,
+    "charisma": 9,
+    "speed": 7
+  }
+]

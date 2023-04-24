@@ -1,0 +1,251 @@
+[
+  {
+    "equipmentId": 1,
+    "name": "",
+    "description": "",
+    "eType": 0,
+    "equipmentAttributes": {
+      "numDiceSaved": 1,
+      "traits": [
+        "Light"
+      ]
+    }
+  },
+  {
+    "equipmentId": 2,
+    "name": "",
+    "description": "",
+    "eType": 0,
+    "equipmentAttributes": {
+      "numDiceSaved": 2,
+      "traits": [
+        "Medium"
+      ]
+    }
+  },
+  {
+    "equipmentId": 3,
+    "name": "",
+    "description": "",
+    "eType": 0,
+    "equipmentAttributes": {
+      "numDiceSaved": 3,
+      "traits": [
+        "Heavy"
+      ]
+    }
+  },
+  {
+    "equipmentId": 4,
+    "name": "",
+    "description": "",
+    "eType": 0,
+    "equipmentAttributes": {
+      "numDiceSaved": 2,
+      "traits": [
+        "Medium",
+        "Ridged"
+      ]
+    }
+  },
+  {
+    "equipmentId": 5,
+    "name": "",
+    "description": "",
+    "eType": 1,
+    "equipmentAttributes": {
+      "numDiceDamage": 2,
+      "traits": [
+        "Light"
+      ]
+    }
+  },
+  {
+    "equipmentId": 6,
+    "name": "",
+    "description": "",
+    "eType": 1,
+    "equipmentAttributes": {
+      "numDiceDamage": 3,
+      "traits": [
+        "Light"
+      ]
+    }
+  },
+  {
+    "equipmentId": 7,
+    "name": "",
+    "description": "",
+    "eType": 1,
+    "equipmentAttributes": {
+      "numDiceDamage": 3,
+      "traits": [
+        "Light"
+      ]
+    }
+  },
+  {
+    "equipmentId": 8,
+    "name": "",
+    "description": "",
+    "eType": 1,
+    "equipmentAttributes": {
+      "numDiceDamage": 2,
+      "traits": [
+        "Light"
+      ]
+    }
+  },
+  {
+    "equipmentId": 9,
+    "name": "",
+    "description": "",
+    "eType": 1,
+    "equipmentAttributes": {
+      "numDiceDamage": 1,
+      "traits": [
+        "Light"
+      ]
+    }
+  },
+  {
+    "equipmentId": 10,
+    "name": "",
+    "description": "",
+    "eType": 1,
+    "equipmentAttributes": {
+      "numDiceDamage": 2,
+      "traits": [
+        "Light"
+      ]
+    }
+  },
+  {
+    "equipmentId": 11,
+    "name": "",
+    "description": "",
+    "eType": 1,
+    "equipmentAttributes": {
+      "numDiceDamage": 2,
+      "traits": [
+        "Light"
+      ]
+    }
+  },
+  {
+    "equipmentId": 12,
+    "name": "",
+    "description": "",
+    "eType": 1,
+    "equipmentAttributes": {
+      "numDiceDamage": 2,
+      "traits": [
+        "Light"
+      ]
+    }
+  },
+  {
+    "equipmentId": 13,
+    "name": "",
+    "description": "",
+    "eType": 2,
+    "equipmentAttributes": {
+      "numUses": 1,
+      "numDice": 3,
+      "traits": [
+        "Gas"
+      ]
+    }
+  },
+  {
+    "equipmentId": 14,
+    "name": "",
+    "description": "",
+    "eType": 2,
+    "equipmentAttributes": {
+      "numUses": 1,
+      "numDice": 3,
+      "traits": [
+        "Gas"
+      ]
+    }
+  },
+  {
+    "equipmentId": 15,
+    "name": "",
+    "description": "",
+    "eType": 2,
+    "equipmentAttributes": {
+      "numUses": 1,
+      "numDice": 3,
+      "traits": [
+        "Gas"
+      ]
+    }
+  },
+  {
+    "equipmentId": 16,
+    "name": "",
+    "description": "",
+    "eType": 2,
+    "equipmentAttributes": {
+      "numUses": 1,
+      "numDice": 3,
+      "traits": [
+        "Gas"
+      ]
+    }
+  },
+  {
+    "equipmentId": 17,
+    "name": "",
+    "description": "",
+    "eType": 2,
+    "equipmentAttributes": {
+      "numUses": 1,
+      "numDice": 3,
+      "traits": [
+        "Gas"
+      ]
+    }
+  },
+  {
+    "equipmentId": 18,
+    "name": "",
+    "description": "",
+    "eType": 2,
+    "equipmentAttributes": {
+      "numUses": 1,
+      "numDice": 3,
+      "traits": [
+        "Gas"
+      ]
+    }
+  },
+  {
+    "equipmentId": 19,
+    "name": "",
+    "description": "",
+    "eType": 2,
+    "equipmentAttributes": {
+      "numUses": 1,
+      "numDice": 3,
+      "traits": [
+        "Gas"
+      ]
+    }
+  },
+  {
+    "equipmentId": 20,
+    "name": "",
+    "description": "",
+    "eType": 2,
+    "equipmentAttributes": {
+      "numUses": 1,
+      "numDice": 3,
+      "traits": [
+        "Gas"
+      ]
+    }
+  }
+]
