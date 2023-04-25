@@ -1,449 +1,449 @@
 [
   {
     "skillId": 1,
-    "name": "Burst",
-    "Description": "",
+    "name": "Stealth",
+    "Description": "Advantage on Stealth tests",
     "skillType": 1,
     "roll": 1
   },
   {
     "skillId": 2,
     "name": "Charge",
-    "Description": "",
+    "Description": "Advantage on charge rolls",
     "skillType": 1,
     "roll": 2
   },
   {
     "skillId": 3,
     "name": "Climb",
-    "Description": "",
+    "Description": "Advantage on Climb tests",
     "skillType": 1,
     "roll": 3
   },
   {
     "skillId": 4,
     "name": "Deployment",
-    "Description": "Deploy up to your move score outside of the zone ",
+    "Description": "Deploy up to your move score outside of the zone",
     "skillType": 1,
     "roll": 4
   },
   {
     "skillId": 5,
     "name": "Dodge",
-    "Description": "",
+    "Description": "Opponent has disadvantage on attack. Move score reduced by 2",
     "skillType": 1,
     "roll": 5
   },
   {
     "skillId": 6,
     "name": "Jump",
-    "Description": "",
+    "Description": "Increase jump distance by 50%, can standing jump up to 50% of move",
     "skillType": 1,
     "roll": 6
   },
   {
     "skillId": 7,
     "name": "Slide",
-    "Description": "",
+    "Description": "Increase move by 25% must end up behind cover",
     "skillType": 1,
     "roll": 7
   },
   {
     "skillId": 8,
     "name": "Sprint",
-    "Description": "",
+    "Description": "Increase full move by 50%",
     "skillType": 1,
     "roll": 8
   },
   {
     "skillId": 9,
-    "name": "Skill 1",
-    "Description": "",
+    "name": "Heavy Weapon",
+    "Description": "Can operate weapons with the heavy trait",
     "skillType": 3,
     "roll": 1
   },
   {
     "skillId": 10,
-    "name": "Skill 2",
-    "Description": "",
+    "name": "Long Shot",
+    "Description": "All ranges increased by 25%",
     "skillType": 3,
     "roll": 2
   },
   {
     "skillId": 11,
-    "name": "Skill 3",
-    "Description": "",
+    "name": "Thrown",
+    "Description": "Double thrown range",
     "skillType": 3,
     "roll": 3
   },
   {
     "skillId": 12,
-    "name": "Skill 4",
-    "Description": "",
+    "name": "Deadeye",
+    "Description": "No disadvantage for shooting at a target behind cover",
     "skillType": 3,
     "roll": 4
   },
   {
     "skillId": 13,
-    "name": "Skill 5",
-    "Description": "",
+    "name": "Hip Shot",
+    "Description": "May take one shot at disadvantage after a full move action",
     "skillType": 3,
     "roll": 5
   },
   {
     "skillId": 14,
-    "name": "Skill 6",
-    "Description": "",
+    "name": "Mighty Shot",
+    "Description": "Add one to damage",
     "skillType": 3,
     "roll": 6
   },
   {
     "skillId": 15,
-    "name": "Skill 7",
-    "Description": "",
+    "name": "Rapid Reload",
+    "Description": "Ranged weapons with the quick trait can be shot twice in a turn",
     "skillType": 3,
     "roll": 7
   },
   {
     "skillId": 16,
-    "name": "Skill 8",
-    "Description": "",
+    "name": "Defensive Shooting",
+    "Description": "This turn your attacks have disadvantage and your defense has advantage",
     "skillType": 3,
     "roll": 8
   },
   {
     "skillId": 17,
-    "name": "Skill 1",
-    "Description": "",
+    "name": "Two Weapon",
+    "Description": "Can wield a weapon with the light trait in the off hand and gain +1 to attack",
     "skillType": 2,
     "roll": 1
   },
   {
     "skillId": 18,
-    "name": "Skill 2",
-    "Description": "",
+    "name": "Two-Handed",
+    "Description": "Can wield weapons that require two hands",
     "skillType": 2,
     "roll": 2
   },
   {
     "skillId": 19,
-    "name": "Skill 3",
-    "Description": "",
+    "name": "Unarmed",
+    "Description": "Gain + 1 to attack when unarmed",
     "skillType": 2,
     "roll": 3
   },
   {
     "skillId": 20,
-    "name": "Skill 4",
-    "Description": "",
+    "name": "Counter Attack",
+    "Description": "When receiving a charge, may make an attack at disadvantage",
     "skillType": 2,
     "roll": 4
   },
   {
     "skillId": 21,
-    "name": "Skill 5",
-    "Description": "",
+    "name": "Disarm",
+    "Description": "As an action make a melee check and if success, the enemy is disarmed",
     "skillType": 2,
     "roll": 5
   },
   {
     "skillId": 22,
-    "name": "Skill 6",
-    "Description": "",
+    "name": "Defensive Fighting",
+    "Description": "This turn, your attack as disadvantage, but defense has advantage",
     "skillType": 2,
     "roll": 6
   },
   {
     "skillId": 23,
-    "name": "Skill 7",
-    "Description": "",
+    "name": "All out attack",
+    "Description": "When attacking as a full action, gain one attack, and have disadvantage on defense",
     "skillType": 2,
     "roll": 7
   },
   {
     "skillId": 24,
-    "name": "Skill 8",
-    "Description": "",
+    "name": "Quick Attack",
+    "Description": "Gain one attack",
     "skillType": 2,
     "roll": 8
   },
   {
     "skillId": 25,
-    "name": "Skill 1",
-    "Description": "",
+    "name": "Natural Leader",
+    "Description": "All squad mates that you can see, have advantage on charisma rolls. All allies you can see have advantage on a single charisma test each turn",
     "skillType": 8,
     "roll": 1
   },
   {
     "skillId": 26,
-    "name": "Skill 2",
-    "Description": "",
+    "name": "Cause Fear",
+    "Description": "As an action, make a Charisma test vs an opponent you can see. If you win, they are afraid and have disadvantage on all rolls for the next turn",
     "skillType": 8,
     "roll": 2
   },
   {
     "skillId": 27,
-    "name": "Skill 3",
-    "Description": "",
+    "name": "Motivator",
+    "Description": "As an action, try and get an ally out of the fear state",
     "skillType": 8,
     "roll": 3
   },
   {
     "skillId": 28,
-    "name": "Skill 4",
-    "Description": "",
+    "name": "Fear is fuel",
+    "Description": "If you fail a fear test, you have advantage until the end of your turn, if you success, they have disadvantage for the rest of their turn",
     "skillType": 8,
     "roll": 4
   },
   {
     "skillId": 29,
-    "name": "Skill 5",
-    "Description": "",
+    "name": "Inspiring",
+    "Description": "As an action make a leadership test - on success all allies who can hear you have advantage on their next roll",
     "skillType": 8,
     "roll": 5
   },
   {
     "skillId": 30,
-    "name": "Skill 6",
-    "Description": "",
+    "name": "Shrewd Negotiator",
+    "Description": "Roll twice on after action battles, choose either result",
     "skillType": 8,
     "roll": 6
   },
   {
     "skillId": 31,
     "name": "Skill 7",
-    "Description": "",
+    "Description": "TBD",
     "skillType": 8,
     "roll": 7
   },
   {
     "skillId": 32,
     "name": "Skill 8",
-    "Description": "",
+    "Description": "TBD",
     "skillType": 8,
     "roll": 8
   },
   {
     "skillId": 33,
-    "name": "Skill 1",
-    "Description": "",
+    "name": "Deployment",
+    "Description": "You may deploy into alternate designated deploy zone",
     "skillType": 7,
     "roll": 1
   },
   {
     "skillId": 34,
-    "name": "Skill 2",
-    "Description": "",
+    "name": "Observer",
+    "Description": "Advantage on detecting hidden enemies",
     "skillType": 7,
     "roll": 2
   },
   {
     "skillId": 35,
-    "name": "Skill 3",
-    "Description": "",
+    "name": "Tactical Awareness",
+    "Description": "Always aware of where the objective is",
     "skillType": 7,
     "roll": 3
   },
   {
     "skillId": 36,
-    "name": "Skill 4",
-    "Description": "",
+    "name": "Trap Detector",
+    "Description": "Automatically aware of traps within alertness skill range -advantage otherwise",
     "skillType": 7,
     "roll": 4
   },
   {
     "skillId": 37,
-    "name": "Skill 5",
-    "Description": "",
+    "name": "Medic",
+    "Description": "Advantage on medicine tests to revive allies",
     "skillType": 7,
     "roll": 5
   },
   {
     "skillId": 38,
-    "name": "Skill 6",
-    "Description": "",
+    "name": "Blind Fighting",
+    "Description": "No disadvantage for fighting blind",
     "skillType": 7,
     "roll": 6
   },
   {
     "skillId": 39,
-    "name": "Skill 7",
-    "Description": "",
+    "name": "Combat Awareness",
+    "Description": "Use Alertness instead of Speed for Initiative",
     "skillType": 7,
     "roll": 7
   },
   {
     "skillId": 40,
-    "name": "Skill 8",
-    "Description": "",
+    "name": "Press the Advantage",
+    "Description": "TBD",
     "skillType": 7,
     "roll": 8
   },
   {
     "skillId": 41,
-    "name": "Skill 1",
-    "Description": "",
+    "name": "Double Shot",
+    "Description": "Ranged weapons with the quick trait can be fired twice",
     "skillType": 4,
     "roll": 1
   },
   {
     "skillId": 42,
-    "name": "Skill 2",
-    "Description": "",
+    "name": "Quick Draw",
+    "Description": "Weapons with the small trait can be drawn for free",
     "skillType": 4,
     "roll": 2
   },
   {
     "skillId": 43,
-    "name": "Skill 3",
-    "Description": "",
+    "name": "Initiative",
+    "Description": "Advantage on initiative rolls",
     "skillType": 4,
     "roll": 3
   },
   {
     "skillId": 44,
-    "name": "Skill 4",
-    "Description": "",
+    "name": "Escape Artist",
+    "Description": "TBD",
     "skillType": 4,
     "roll": 4
   },
   {
     "skillId": 45,
-    "name": "Skill 5",
-    "Description": "",
+    "name": "Catlike Grace",
+    "Description": "TBD",
     "skillType": 4,
     "roll": 5
   },
   {
     "skillId": 46,
-    "name": "Skill 6",
-    "Description": "",
+    "name": "Object use",
+    "Description": "Can use objects with the simple trait as a free action",
     "skillType": 4,
     "roll": 6
   },
   {
     "skillId": 47,
-    "name": "Skill 7",
-    "Description": "",
+    "name": "Deployment",
+    "Description": "Can deploy up to your speed score outside of the deploy zone",
     "skillType": 4,
     "roll": 7
   },
   {
     "skillId": 48,
-    "name": "Skill 8",
-    "Description": "",
+    "name": "Fast Hands",
+    "Description": "Securing an objective is now only an action",
     "skillType": 4,
     "roll": 8
   },
   {
     "skillId": 49,
-    "name": "Skill 1",
-    "Description": "",
+    "name": "Spartan Kick",
+    "Description": "As an action kick an opponent, on success that person is knocked back up to half strength",
     "skillType": 5,
     "roll": 1
   },
   {
     "skillId": 50,
-    "name": "Skill 2",
-    "Description": "",
+    "name": "Berserk Charge",
+    "Description": "TBD",
     "skillType": 5,
     "roll": 2
   },
   {
     "skillId": 51,
-    "name": "Skill 3",
-    "Description": "",
+    "name": "Heavy weapon expert",
+    "Description": "May move and shoot Weapons on the same with the Heavy trait",
     "skillType": 5,
     "roll": 3
   },
   {
     "skillId": 52,
-    "name": "Skill 4",
-    "Description": "",
+    "name": "Stationary weapon handler",
+    "Description": "May fire a Stationary weapon on the same turn it is setup",
     "skillType": 5,
     "roll": 4
   },
   {
     "skillId": 53,
-    "name": "Skill 5",
-    "Description": "",
+    "name": "Physique",
+    "Description": "Add one to all charisma checks",
     "skillType": 5,
     "roll": 5
   },
   {
     "skillId": 54,
-    "name": "Skill 6",
-    "Description": "",
+    "name": "Throw Person",
+    "Description": "Instead of rolling damage to a melee'd opponent, you may throw them D8 away from you in any direction",
     "skillType": 5,
     "roll": 6
   },
   {
     "skillId": 55,
-    "name": "Skill 7",
-    "Description": "",
+    "name": "Create Cover",
+    "Description": "Large pieces of debris can be stood up and hidden behind",
     "skillType": 5,
     "roll": 7
   },
   {
     "skillId": 56,
-    "name": "Skill 8",
-    "Description": "",
+    "name": "Destroy Cover",
+    "Description": "Create a hole in cover that can be shot or have an object thrown into",
     "skillType": 5,
     "roll": 8
   },
   {
     "skillId": 57,
-    "name": "Skill 1",
-    "Description": "",
+    "name": "Iron Jaw",
+    "Description": "Reduce the strength of incoming damage by one",
     "skillType": 6,
     "roll": 1
   },
   {
     "skillId": 58,
-    "name": "Skill 2",
-    "Description": "",
+    "name": "Gritty",
+    "Description": "Advantage on Pin tests",
     "skillType": 6,
     "roll": 2
   },
   {
     "skillId": 59,
-    "name": "Skill 3",
-    "Description": "",
+    "name": "Stalwart",
+    "Description": "Advantage on Charge Defense",
     "skillType": 6,
     "roll": 3
   },
   {
     "skillId": 60,
-    "name": "Skill 4",
-    "Description": "",
+    "name": "Feel No Pain",
+    "Description": "May still take one action when pinned",
     "skillType": 6,
     "roll": 4
   },
   {
     "skillId": 61,
-    "name": "Skill 5",
-    "Description": "",
+    "name": "Rub Some Dirt On It",
+    "Description": "Once per battle, can get back up without aid",
     "skillType": 6,
     "roll": 5
   },
   {
     "skillId": 62,
-    "name": "Skill 6",
-    "Description": "",
+    "name": "Indestructible",
+    "Description": "After action, move down one rank on the wound scale",
     "skillType": 6,
     "roll": 6
   },
   {
     "skillId": 63,
-    "name": "Skill 7",
-    "Description": "",
+    "name": "Intestinal fortitude",
+    "Description": "Can listen to k-pop without barfing",
     "skillType": 6,
     "roll": 7
   },
   {
     "skillId": 56,
-    "name": "Skill 8",
-    "Description": "",
+    "name": "Patient",
+    "Description": "Can set an ambush more than one turn into the future",
     "skillType": 6,
     "roll": 8
   }
