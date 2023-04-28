@@ -9,5 +9,8 @@ namespace GangWar.Models
         
         [JsonPropertyName("outputPath")]
         public string? OutputPath { get; set; }
+
+        [JsonPropertyName("debugMode")]
+        public bool DebugMode { get; set; }
     }
 }

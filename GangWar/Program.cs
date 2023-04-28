@@ -1,8 +1,8 @@
 ﻿using GangWar.Enumerations;
 using GangWar.Models;
 using Microsoft.Extensions.Configuration;
-using System;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 
 #nullable disable
 namespace GangWar
@@ -18,7 +18,14 @@ namespace GangWar
 
             if (LoadConfig())
             {
-                List<CharacterModel> listOfCharacters = new();
+                SeedJsonValues();
+
+                //List<CharacterModel> listOfCharacters = new();
+                SquadModel thisSquad = new()
+                {
+                    Name = "This is a test",
+                    ListOfCharacters = new()
+                };
                 var startingDetails = GetNewGangeValues();
 
                 foreach (var person in startingDetails.Person)
@@ -29,19 +36,25 @@ namespace GangWar
 
                     var dude = CreateCharacter(person.Value.NumBattles);
                     dude.ListOfEquipment = DetermineEquipment(person.Value.StartingEquipment);
-                    dude.Cost = person.Value.Cost;
+                    dude.Cost = CalculateTotalPersonalCost(person.Value.Cost, dude.ListOfEquipment);
                     dude.Type = person.Key;
+                    dude.NumBattles = person.Value.NumBattles;                    
+                    Output.WriteFinalPCToScreen(dude);
 
-                    WriteFinalPCToScreen(dude);
-                    listOfCharacters.Add(dude);
+                    thisSquad.ListOfCharacters.Add(dude);
                 }
 
-                OutputGangDetails(listOfCharacters);
+                thisSquad.TotalCost = thisSquad.ListOfCharacters.Sum(x => x.Cost);
+                thisSquad.TotalXP = thisSquad.ListOfCharacters.Sum(x => x.XP);
+
+                //Output.WriteGangToFile(thisSquad, AppConfig.OutputPath);
+                ExportJson("SquadData", thisSquad);
             }
 
             Console.WriteLine("Done");
         }
 
+        #region Configuration
         private static bool LoadConfig()
         {
             try
@@ -56,6 +69,34 @@ namespace GangWar
                 return false;
             }
         }
+
+        private static void SeedJsonValues()
+        {
+            List<EquipmentModel> list = new()
+            {
+                new EquipmentModel { Name = "Knife", Price = 0, Description = "Basic melee weapon", EType = EquipmentType.Weapon, NumDice = 1, Range = 4, Traits = new List<TraitModel>{ new TraitModel { Name = "Light", Description = "" }, new TraitModel { Name = "Versitile", Description = "" }, new TraitModel {  Name = "Basic", Description = "" } } },
+                new EquipmentModel { Name = "Sword", Price = 2, Description = "", EType = EquipmentType.Weapon, NumDice = 1, Traits = new List<TraitModel>{ new TraitModel { Name = "Light", Description = "" }, new TraitModel { Name = "Versitile", Description = "" }, new TraitModel {  Name = "Basic", Description = "" } } },
+                new EquipmentModel { Name = "Axe", Price = 2, Description = "", EType = EquipmentType.Weapon , NumDice = 1, Traits = new List<TraitModel>{ new TraitModel { Name = "Light", Description = "" }, new TraitModel { Name = "Versitile", Description = "" }, new TraitModel {  Name = "Basic", Description = "" } } },
+                new EquipmentModel { Name = "Crossbow", Price = 2, Description = "", EType = EquipmentType.Weapon, NumDice = 1, Range = 4, Traits = new List < TraitModel > { new TraitModel { Name = "Light", Description = "" }, new TraitModel { Name = "Versitile", Description = "" }, new TraitModel { Name = "Basic", Description = "" } }},
+                new EquipmentModel { Name = "Short Bow", Price = 2, Description = "", EType = EquipmentType.Weapon, NumDice = 1, Range = 4, Traits = new List < TraitModel > { new TraitModel { Name = "Light", Description = "" }, new TraitModel { Name = "Versitile", Description = "" }, new TraitModel { Name = "Basic", Description = "" } }},
+                new EquipmentModel { Name = "Light Armor", Price = 2, Description = "Most basic Armor", EType = EquipmentType.Armor , NumDice = 1, Traits = new List<TraitModel>{ new TraitModel { Name = "Light", Description = "" }, new TraitModel { Name = "Versitile", Description = "" }, new TraitModel {  Name = "Basic", Description = "" } } },
+                new EquipmentModel { Name = "Medium Armor", Price = 2, Description = "", EType = EquipmentType.Armor , NumDice = 1, Traits = new List<TraitModel>{ new TraitModel { Name = "Light", Description = "" }, new TraitModel { Name = "Versitile", Description = "" }, new TraitModel {  Name = "Basic", Description = "" } } },
+                new EquipmentModel { Name = "Heavy Armor", Price = 2, Description = "", EType = EquipmentType.Armor , NumDice = 1, Traits = new List<TraitModel>{ new TraitModel { Name = "Light", Description = "" }, new TraitModel { Name = "Versitile", Description = "" }, new TraitModel {  Name = "Basic", Description = "" } } },
+                new EquipmentModel { Name = "Smoke", Price = 1, Description = "", EType = EquipmentType.Consumable , NumDice = 1, Range = 4, Traits = new List<TraitModel>{ new TraitModel { Name = "Light", Description = "" }, new TraitModel { Name = "Versitile", Description = "" }, new TraitModel {  Name = "Basic", Description = "" } } },
+                new EquipmentModel { Name = "Fire", Price = 1, Description = "", EType = EquipmentType.Consumable , NumDice = 1, Range = 4, Traits = new List<TraitModel>{ new TraitModel { Name = "Light", Description = "" }, new TraitModel { Name = "Versitile", Description = "" }, new TraitModel {  Name = "Basic", Description = "" } } },
+                new EquipmentModel { Name = "Medical Pack", Price = 1, Description = "Try to heal one's self", EType = EquipmentType.Consumable , NumDice = 1, Traits = new List<TraitModel>{ new TraitModel { Name = "Light", Description = "" }, new TraitModel { Name = "Versitile", Description = "" }, new TraitModel {  Name = "Basic", Description = "" } } },
+                new EquipmentModel { Name = "Schrapnel", Price = 1, Description = "", EType = EquipmentType.Consumable , NumDice = 1, Range = 4, Traits = new List<TraitModel>{ new TraitModel { Name = "Light", Description = "" }, new TraitModel { Name = "Versitile", Description = "" }, new TraitModel {  Name = "Basic", Description = "" } } },
+                new EquipmentModel { Name = "Wand", Price = 1, Description = "", EType = EquipmentType.Other , NumDice = 1, Traits = new List<TraitModel>{ new TraitModel { Name = "Light", Description = "" }, new TraitModel { Name = "Versitile", Description = "" }, new TraitModel {  Name = "Basic", Description = "" } } },
+
+            };
+
+            //
+            for (int i = 0; i < list.Count; i++)
+                list[i].EquipmentId = i + 1;
+
+            ExportJson("EquipmentList", list);
+        }
+        #endregion
 
         #region Person
         /// <summary>
@@ -242,69 +283,39 @@ namespace GangWar
         #region Equipment
         private static List<EquipmentModel> DetermineEquipment(EquipmentType[] args)
         {
+            Console.WriteLine();
             ColorText("Equipment", ConsoleColor.Green);
 
             List<EquipmentModel> allItems = GetEquipment();
-
-
             List<EquipmentModel> returnMe = new();
 
+            //Add all free items to a person's inventory
+            var freeItems = allItems.Where(x => x.Price.Equals(0)).ToList();
+            foreach(var item in freeItems)
+                returnMe.Add(item);
+
+            //Randomly determine equipment
             foreach (var item in args)
             {
-                if (item.Equals(EquipmentType.Weapon))
-                {
-                    var list = allItems.Where(x => x.EType.Equals(item)).ToList();
-                }
+                //
+                var listPotential = allItems.Where(x => x.EType.Equals(item)).ToList();
 
-                Console.WriteLine(item);
-                returnMe.Add(new EquipmentModel { EType = item, Name = item.ToString(), EquipmentId = _rand.Next(55), });
+                //
+                int index = _rand.Next(listPotential.Count);
+
+                Console.WriteLine($"{listPotential[index].EType} - {listPotential[index].Name}");
+                returnMe.Add(listPotential[index]);
             }
 
 
             return returnMe;
         }
-        #endregion
 
-        #region Output
-        /// <summary>
-        /// Write summary to the screen
-        /// </summary>
-        /// <param name="newPC">The character</param>
-        private static void WriteFinalPCToScreen(CharacterModel newPC)
+
+        private static int CalculateTotalPersonalCost(int personalCost, List<EquipmentModel> listOfEquipment)
         {
-            //blank line
-            Console.WriteLine();
-
-            Console.WriteLine($"Name: {newPC.Name} - {newPC.Cost}");
-            Console.WriteLine("-------------------------------------");
-            Console.WriteLine("| M | WS | BS | S | T | I | A | LD  |");
-            Console.WriteLine("-------------------------------------");
-            Console.WriteLine($"| {newPC.Move} |  {newPC.Melee} |  {newPC.Range} | {newPC.Strength} | {newPC.Toughness} | {newPC.Alertness} | {newPC.Speed} |  {newPC.Charisma}  |");
-            Console.WriteLine("-------------------------------------");
-
-            if (newPC.ListOfSkills is not null)
-            {
-                Console.WriteLine("| Skills:                           |");
-                foreach (var theSkill in newPC.ListOfSkills.OrderBy(x => x.SkillType).ThenBy(y => y.SkillID))
-                {
-                    Console.WriteLine($"| {theSkill.SkillType,-9} {theSkill.Name,23} |");
-                }
-                Console.WriteLine("-------------------------------------");
-            }
-
-            Console.WriteLine("| Equipment:                        |");
-            foreach (var item in newPC.ListOfEquipment.OrderBy(x => x.EType).ThenBy(y => y.EquipmentId))
-            {
-                Console.WriteLine($"| {item.EquipmentId,-9} {item.Name,23} |");
-            }
-            Console.WriteLine("-------------------------------------");
-        }
-
-        private static void OutputGangDetails(List<CharacterModel> listOfCharacters)
-        {
-            Directory.CreateDirectory(AppConfig.OutputPath);
-            string file = Path.Combine(AppConfig.OutputPath, $"NewGang-{DateTime.Now:MMddyyHHmm}.json");
-            File.WriteAllText(file, JsonSerializer.Serialize(listOfCharacters, new JsonSerializerOptions { WriteIndented = true, DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull }));
+            var itemCost = listOfEquipment.Sum(x => x.Price);
+            return itemCost + personalCost;
         }
         #endregion
 
@@ -380,7 +391,7 @@ namespace GangWar
         /// <param name="obj"></param>
         private static void ExportJson(string fileName, object obj)
         {
-            File.WriteAllText($"{AppConfig.SourcePath}\\{fileName}.json", JsonSerializer.Serialize(obj, new JsonSerializerOptions { WriteIndented = true, DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull }));
+            File.WriteAllText($"{AppConfig.SourcePath}\\{fileName}.json", JsonSerializer.Serialize(obj, new JsonSerializerOptions { WriteIndented = true, DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull }));
         }
 
         /// <summary>

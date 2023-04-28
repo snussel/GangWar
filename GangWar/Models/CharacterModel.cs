@@ -4,6 +4,14 @@ using System.Text.Json.Serialization;
 #nullable disable
 namespace GangWar.Models
 {
+    internal class SquadModel
+    {
+        public string Name { get; set; }
+        public int TotalXP { get; set; }
+        public int TotalCost { get; set; }
+        public List<CharacterModel> ListOfCharacters { get; set; }
+    }
+
     internal class GangModel
     {
         [JsonPropertyName("Person")]
@@ -45,6 +53,9 @@ namespace GangWar.Models
 
         [JsonPropertyName("xP")]
         public int XP { get; set; }
+
+        [JsonPropertyName("numBattles")]
+        public int NumBattles { get; set; }
 
         [JsonPropertyName("listOfSkills")]
         public List<SkillModel> ListOfSkills { get; set; }
@@ -135,7 +146,7 @@ namespace GangWar.Models
         [JsonPropertyName("name")]
         public string Name { get; set; } = string.Empty;
 
-        [JsonPropertyName("Description")]
+        [JsonPropertyName("description")]
         public string Description { get; set; } = string.Empty;
 
         [JsonPropertyName("skillType")]
@@ -144,8 +155,4 @@ namespace GangWar.Models
         [JsonPropertyName("roll")]
         public int Roll { get; set; }
     }
-
-    #region Enums
-
-    #endregion
 }
