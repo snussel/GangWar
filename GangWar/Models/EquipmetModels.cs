@@ -27,6 +27,9 @@ namespace GangWar.Models
         [JsonPropertyName("range")]
         public int Range { get; set; }
 
+        [JsonPropertyName("levelOfQuality")]
+        public QualityLevels LevelOfQuality { get; set; }
+
         [JsonPropertyName("traits")]
         public List<TraitModel> Traits { get; set; }
     }

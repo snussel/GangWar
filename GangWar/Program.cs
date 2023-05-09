@@ -18,14 +18,15 @@ namespace GangWar
 
             if (LoadConfig())
             {
-                SeedJsonValues();
+                //
+                SeedConfigValues.SeedJsonValues(AppConfig.SourcePath);
 
-                //List<CharacterModel> listOfCharacters = new();
                 SquadModel thisSquad = new()
                 {
                     Name = "This is a test",
                     ListOfCharacters = new()
                 };
+
                 var startingDetails = GetNewGangeValues();
 
                 foreach (var person in startingDetails.Person)
@@ -35,7 +36,7 @@ namespace GangWar
                     ColorText(person.Key, ConsoleColor.Green);
 
                     var dude = CreateCharacter(person.Value.NumBattles);
-                    dude.ListOfEquipment = DetermineEquipment(person.Value.StartingEquipment);
+                    dude.ListOfEquipment = DetermineEquipment(person.Value.StartingEquipment, person.Value.MaxQuality);
                     dude.Cost = CalculateTotalPersonalCost(person.Value.Cost, dude.ListOfEquipment);
                     dude.Type = person.Key;
                     dude.NumBattles = person.Value.NumBattles;                    
@@ -47,8 +48,8 @@ namespace GangWar
                 thisSquad.TotalCost = thisSquad.ListOfCharacters.Sum(x => x.Cost);
                 thisSquad.TotalXP = thisSquad.ListOfCharacters.Sum(x => x.XP);
 
-                //Output.WriteGangToFile(thisSquad, AppConfig.OutputPath);
-                ExportJson("SquadData", thisSquad);
+                Output.WriteGangToFile(thisSquad, AppConfig.OutputPath);
+                Output.ExportJson("SquadData", AppConfig.OutputPath, thisSquad);
             }
 
             Console.WriteLine("Done");
@@ -68,33 +69,6 @@ namespace GangWar
                 Console.WriteLine(e.Message.Trim());
                 return false;
             }
-        }
-
-        private static void SeedJsonValues()
-        {
-            List<EquipmentModel> list = new()
-            {
-                new EquipmentModel { Name = "Knife", Price = 0, Description = "Basic melee weapon", EType = EquipmentType.Weapon, NumDice = 1, Range = 4, Traits = new List<TraitModel>{ new TraitModel { Name = "Light", Description = "" }, new TraitModel { Name = "Versitile", Description = "" }, new TraitModel {  Name = "Basic", Description = "" } } },
-                new EquipmentModel { Name = "Sword", Price = 2, Description = "", EType = EquipmentType.Weapon, NumDice = 1, Traits = new List<TraitModel>{ new TraitModel { Name = "Light", Description = "" }, new TraitModel { Name = "Versitile", Description = "" }, new TraitModel {  Name = "Basic", Description = "" } } },
-                new EquipmentModel { Name = "Axe", Price = 2, Description = "", EType = EquipmentType.Weapon , NumDice = 1, Traits = new List<TraitModel>{ new TraitModel { Name = "Light", Description = "" }, new TraitModel { Name = "Versitile", Description = "" }, new TraitModel {  Name = "Basic", Description = "" } } },
-                new EquipmentModel { Name = "Crossbow", Price = 2, Description = "", EType = EquipmentType.Weapon, NumDice = 1, Range = 4, Traits = new List < TraitModel > { new TraitModel { Name = "Light", Description = "" }, new TraitModel { Name = "Versitile", Description = "" }, new TraitModel { Name = "Basic", Description = "" } }},
-                new EquipmentModel { Name = "Short Bow", Price = 2, Description = "", EType = EquipmentType.Weapon, NumDice = 1, Range = 4, Traits = new List < TraitModel > { new TraitModel { Name = "Light", Description = "" }, new TraitModel { Name = "Versitile", Description = "" }, new TraitModel { Name = "Basic", Description = "" } }},
-                new EquipmentModel { Name = "Light Armor", Price = 2, Description = "Most basic Armor", EType = EquipmentType.Armor , NumDice = 1, Traits = new List<TraitModel>{ new TraitModel { Name = "Light", Description = "" }, new TraitModel { Name = "Versitile", Description = "" }, new TraitModel {  Name = "Basic", Description = "" } } },
-                new EquipmentModel { Name = "Medium Armor", Price = 2, Description = "", EType = EquipmentType.Armor , NumDice = 1, Traits = new List<TraitModel>{ new TraitModel { Name = "Light", Description = "" }, new TraitModel { Name = "Versitile", Description = "" }, new TraitModel {  Name = "Basic", Description = "" } } },
-                new EquipmentModel { Name = "Heavy Armor", Price = 2, Description = "", EType = EquipmentType.Armor , NumDice = 1, Traits = new List<TraitModel>{ new TraitModel { Name = "Light", Description = "" }, new TraitModel { Name = "Versitile", Description = "" }, new TraitModel {  Name = "Basic", Description = "" } } },
-                new EquipmentModel { Name = "Smoke", Price = 1, Description = "", EType = EquipmentType.Consumable , NumDice = 1, Range = 4, Traits = new List<TraitModel>{ new TraitModel { Name = "Light", Description = "" }, new TraitModel { Name = "Versitile", Description = "" }, new TraitModel {  Name = "Basic", Description = "" } } },
-                new EquipmentModel { Name = "Fire", Price = 1, Description = "", EType = EquipmentType.Consumable , NumDice = 1, Range = 4, Traits = new List<TraitModel>{ new TraitModel { Name = "Light", Description = "" }, new TraitModel { Name = "Versitile", Description = "" }, new TraitModel {  Name = "Basic", Description = "" } } },
-                new EquipmentModel { Name = "Medical Pack", Price = 1, Description = "Try to heal one's self", EType = EquipmentType.Consumable , NumDice = 1, Traits = new List<TraitModel>{ new TraitModel { Name = "Light", Description = "" }, new TraitModel { Name = "Versitile", Description = "" }, new TraitModel {  Name = "Basic", Description = "" } } },
-                new EquipmentModel { Name = "Schrapnel", Price = 1, Description = "", EType = EquipmentType.Consumable , NumDice = 1, Range = 4, Traits = new List<TraitModel>{ new TraitModel { Name = "Light", Description = "" }, new TraitModel { Name = "Versitile", Description = "" }, new TraitModel {  Name = "Basic", Description = "" } } },
-                new EquipmentModel { Name = "Wand", Price = 1, Description = "", EType = EquipmentType.Other , NumDice = 1, Traits = new List<TraitModel>{ new TraitModel { Name = "Light", Description = "" }, new TraitModel { Name = "Versitile", Description = "" }, new TraitModel {  Name = "Basic", Description = "" } } },
-
-            };
-
-            //
-            for (int i = 0; i < list.Count; i++)
-                list[i].EquipmentId = i + 1;
-
-            ExportJson("EquipmentList", list);
         }
         #endregion
 
@@ -281,13 +255,15 @@ namespace GangWar
         #endregion
 
         #region Equipment
-        private static List<EquipmentModel> DetermineEquipment(EquipmentType[] args)
+        private static List<EquipmentModel> DetermineEquipment(EquipmentType[] args, QualityLevels maxQuality)
         {
             Console.WriteLine();
             ColorText("Equipment", ConsoleColor.Green);
 
             List<EquipmentModel> allItems = GetEquipment();
             List<EquipmentModel> returnMe = new();
+
+            var acceptibleQualityLevels = Enum.GetValues(typeof(QualityLevels)).Cast<int>().Where(x => x <= (int)maxQuality).ToArray();
 
             //Add all free items to a person's inventory
             var freeItems = allItems.Where(x => x.Price.Equals(0)).ToList();
@@ -303,10 +279,22 @@ namespace GangWar
                 //
                 int index = _rand.Next(listPotential.Count);
 
+                //
                 Console.WriteLine($"{listPotential[index].EType} - {listPotential[index].Name}");
                 returnMe.Add(listPotential[index]);
             }
 
+            foreach(var item in returnMe)
+            {
+                if (acceptibleQualityLevels.GetLength(0) == 1)
+                {
+                    item.LevelOfQuality = maxQuality;
+                }
+                else
+                {
+                    item.LevelOfQuality = (QualityLevels)acceptibleQualityLevels[_rand.Next(acceptibleQualityLevels.GetLength(0))];
+                }
+            }
 
             return returnMe;
         }
@@ -384,16 +372,6 @@ namespace GangWar
         #endregion
 
         #region Helpers
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="fileName"></param>
-        /// <param name="obj"></param>
-        private static void ExportJson(string fileName, object obj)
-        {
-            File.WriteAllText($"{AppConfig.SourcePath}\\{fileName}.json", JsonSerializer.Serialize(obj, new JsonSerializerOptions { WriteIndented = true, DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull }));
-        }
-
         /// <summary>
         /// 
         /// </summary>

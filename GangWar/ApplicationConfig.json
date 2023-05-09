@@ -2,6 +2,6 @@
   "application": {
     "debugMode": false,
     "outputPath": "e:\\data\\gangwar\\output",
-    "sourcePath": "e:\\data\\gangwar"
+    "sourcePath": "e:\\data\\gangwar\\input"
   }
 }

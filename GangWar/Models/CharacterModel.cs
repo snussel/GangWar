@@ -6,9 +6,16 @@ namespace GangWar.Models
 {
     internal class SquadModel
     {
+        [JsonPropertyName("name")]
         public string Name { get; set; }
+
+        [JsonPropertyName("totalXP")]
         public int TotalXP { get; set; }
+
+        [JsonPropertyName("totalCost")]
         public int TotalCost { get; set; }
+
+        [JsonPropertyName("listOfCharacters")]
         public List<CharacterModel> ListOfCharacters { get; set; }
     }
 
