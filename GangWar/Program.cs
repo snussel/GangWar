@@ -2,7 +2,6 @@
 using GangWar.Models;
 using Microsoft.Extensions.Configuration;
 using System.Text.Json;
-using System.Text.Json.Serialization;
 
 #nullable disable
 namespace GangWar
@@ -261,6 +260,7 @@ namespace GangWar
             ColorText("Equipment", ConsoleColor.Green);
 
             List<EquipmentModel> allItems = GetEquipment();
+            List<TraitModel> allTraits = GetTraits();
             List<EquipmentModel> returnMe = new();
 
             var acceptibleQualityLevels = Enum.GetValues(typeof(QualityLevels)).Cast<int>().Where(x => x <= (int)maxQuality).ToArray();
@@ -368,6 +368,12 @@ namespace GangWar
         {
             var all = File.ReadAllText($"{AppConfig.SourcePath}\\EquipmentList.json");
             return JsonSerializer.Deserialize<List<EquipmentModel>>(all);
+        }
+
+        private static List<TraitModel> GetTraits()
+        {
+            var all = File.ReadAllText($"{AppConfig.SourcePath}\\TraitList.json");
+            return JsonSerializer.Deserialize<List<TraitModel>>(all);
         }
         #endregion
 
