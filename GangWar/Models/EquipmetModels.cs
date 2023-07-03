@@ -1,17 +1,9 @@
 ﻿using GangWar.Enumerations;
-using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
 
 #nullable disable
 namespace GangWar.Models
 {
-    public class EquipmentContext : DbContext
-    { 
-        public DbSet<EquipmentModel> Equipment { get; set; }
-        public DbSet<TraitModel> Traits { get; set; }
-    }
-
-
     public class EquipmentModel
     {
         [JsonPropertyName("equipmentId")]
@@ -53,6 +45,7 @@ namespace GangWar.Models
         [JsonPropertyName("description")]
         public string Description { get; set; }
 
-        public int EquipmentId { get; set; }
+        [JsonPropertyName("typeOfTrait")]
+        public TraitType TypeOfTrait { get; set; }
     }
 }

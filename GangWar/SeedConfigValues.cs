@@ -156,7 +156,7 @@ namespace GangWar
             //
             List<TraitModel> list2 = new() 
             { 
-                new TraitModel { Name = "Basic", Description = "One free level or repair" },
+                new TraitModel { TypeOfTrait = TraitType.BasicMelee, Name = "Basic", Description = "One free level or repair" },
                 new TraitModel { Name = "Usefull", Description = "May draw light items as a free action" },
                 new TraitModel { Name = "Cumbersome", Description = "Trait maximum for all movement tests is 4\"" },
                 new TraitModel { Name = "Robust", Description = "Reroll one failed save, must take the second result" },

@@ -300,6 +300,11 @@ namespace GangWar
         }
 
 
+        private static List<TraitModel>DetermineTraits(int numTraits, List<TraitModel> listOfPossibleTraits)
+        {
+
+        }
+
         private static int CalculateTotalPersonalCost(int personalCost, List<EquipmentModel> listOfEquipment)
         {
             var itemCost = listOfEquipment.Sum(x => x.Price);
