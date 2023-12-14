@@ -1,11 +1,30 @@
 ﻿using GangWar.Enumerations;
 using GangWar.Models;
+using System.Security.Cryptography;
 
 namespace GangWar
 {
     internal class SeedConfigValues
     {
-        public static void SeedJsonValues(string pathToFiles)
+        public static void SeedJsonValues(char[] seedType, string pathToFiles)
+        {
+            foreach (char sType in seedType) 
+            {
+                switch(sType)
+                {
+                    case 'T':
+                        SeedTraits(pathToFiles);
+                        break;
+                    case 'E':
+                        SeedEquipment(pathToFiles); 
+                        break;
+                    default:
+                        throw new InvalidOperationException();
+                }
+            }
+        }
+
+        private static void SeedEquipment(string pathToFiles)
         {
             List<EquipmentModel> list = new()
             {
@@ -152,10 +171,13 @@ namespace GangWar
                 list[i].EquipmentId = i + 1;
 
             Output.ExportJson("EquipmentList", pathToFiles, list);
+        }
 
+        private static void SeedTraits(string pathToFiles)
+        {
             //
-            List<TraitModel> list2 = new() 
-            { 
+            List<TraitModel> list2 = new()
+            {
                 new TraitModel { TypeOfTrait = TraitType.BasicMelee, Name = "Basic", Description = "One free level or repair" },
                 new TraitModel { Name = "Usefull", Description = "May draw light items as a free action" },
                 new TraitModel { Name = "Cumbersome", Description = "Trait maximum for all movement tests is 4\"" },

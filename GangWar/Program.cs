@@ -18,7 +18,7 @@ namespace GangWar
             if (LoadConfig())
             {
                 //
-                SeedConfigValues.SeedJsonValues(AppConfig.SourcePath);
+                SeedConfigValues.SeedJsonValues(new char[] { 'T' }, AppConfig.SourcePath);
 
                 SquadModel thisSquad = new()
                 {
@@ -262,13 +262,10 @@ namespace GangWar
             List<EquipmentModel> allItems = GetEquipment();
             List<TraitModel> allTraits = GetTraits();
             List<EquipmentModel> returnMe = new();
-
-            var acceptibleQualityLevels = Enum.GetValues(typeof(QualityLevels)).Cast<int>().Where(x => x <= (int)maxQuality).ToArray();
+            int[] acceptibleQualityLevels = Enum.GetValues(typeof(QualityLevels)).Cast<int>().Where(x => x <= (int)maxQuality).ToArray();
 
             //Add all free items to a person's inventory
-            var freeItems = allItems.Where(x => x.Price.Equals(0)).ToList();
-            foreach(var item in freeItems)
-                returnMe.Add(item);
+            returnMe.AddRange(allItems.Where(x => x.Price.Equals(0)).ToList());
 
             //Randomly determine equipment
             foreach (var item in args)
@@ -302,7 +299,8 @@ namespace GangWar
 
         private static List<TraitModel>DetermineTraits(int numTraits, List<TraitModel> listOfPossibleTraits)
         {
-
+            var list = new List<TraitModel>();
+            return list;
         }
 
         private static int CalculateTotalPersonalCost(int personalCost, List<EquipmentModel> listOfEquipment)
@@ -334,9 +332,31 @@ namespace GangWar
                 Melee = baseValues.Melee,
                 Move = baseValues.Move,
                 Range = baseValues.Range,
-                Toughness = baseValues.Toughness,
+                Toughness = baseValues.Toughness, 
+                Personality = SetPersonality(baseValues.Personality),
                 ListOfSkills = new()
             };
+        }
+
+        /// <summary>
+        /// Set the personality of the character
+        /// </summary>
+        /// <param name="personality">The max values for each personality trait</param>
+        /// <returns>The personality trait values</returns>
+        private static PersonalityModel SetPersonality(PersonalityModel personality)
+        {
+            PersonalityModel returnMe = new();
+
+            var properties = personality.GetType().GetProperties();
+
+            //Loop trough each personality trait and assign a random value
+            foreach(var trait in returnMe.GetType().GetProperties())
+            {
+                int maxVal = (int)properties.FirstOrDefault(x => x.Name.Equals(trait.Name)).GetValue(personality, null);
+                trait.SetValue(returnMe, _rand.Next(1, maxVal + 1));
+            }
+
+            return returnMe;
         }
 
         private static List<SkillModel> GetSkills()

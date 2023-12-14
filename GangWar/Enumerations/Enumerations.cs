@@ -40,12 +40,18 @@ namespace GangWar.Enumerations
         Sword,
         Axe,
         Hammer,
-        PoleArm,
+        Polearm,
+        [EnumMember(Value = "Basic Ranged")]
+        [Description("This is a test")]
         BasicRanged,
         Bow,
         Crossbow,
+        [EnumMember(Value = "Basic Consumible")]
+        [Description("This is a test")]
         BasicConsumible,
         Grenade,
+        [EnumMember(Value = "Basic Other")]
+        [Description("This is a test")]
         BasicOther
     }
 }

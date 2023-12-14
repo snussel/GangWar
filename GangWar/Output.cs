@@ -121,10 +121,20 @@ namespace GangWar
             Console.WriteLine();
 
             Console.WriteLine($"Name: {newPC.Name} - {newPC.Cost}");
+            Console.WriteLine($" Attributes");
             Console.WriteLine("-------------------------------------");
             Console.WriteLine("| M | WS | BS | S | T | I | A | LD  |");
             Console.WriteLine("-------------------------------------");
             Console.WriteLine($"| {newPC.Move} |  {newPC.Melee} |  {newPC.Range} | {newPC.Strength} | {newPC.Toughness} | {newPC.Alertness} | {newPC.Speed} |  {newPC.Charisma}  |");
+            Console.WriteLine("-------------------------------------");
+
+
+            Console.WriteLine($"| Personality                       |");
+            Console.WriteLine($"| Agreeableness               :  {newPC.Personality.Agreeableness,2} |");
+            Console.WriteLine($"| Conscientiousness           :  {newPC.Personality.Conscientiousness,2} |");
+            Console.WriteLine($"| Extraversion                :  {newPC.Personality.Extraversion,2} |");            
+            Console.WriteLine($"| Neuroticism                 :  {newPC.Personality.Neuroticism,2} |");
+            Console.WriteLine($"| Openness                    :  {newPC.Personality.Openness,2} |");
             Console.WriteLine("-------------------------------------");
 
             if (newPC.ListOfSkills is not null)

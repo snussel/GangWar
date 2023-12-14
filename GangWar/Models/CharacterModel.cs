@@ -99,6 +99,27 @@ namespace GangWar.Models
 
         [JsonPropertyName("speed")]
         public int Speed { get; set; }
+
+        [JsonPropertyName("personality")]
+        public PersonalityModel Personality { get; set; }
+    }
+
+    internal class PersonalityModel
+    {
+        [JsonPropertyName("Agreeableness")]
+        public int Agreeableness { get; set; }
+
+        [JsonPropertyName("Conscientiousness")]
+        public int Conscientiousness { get; set; }
+
+        [JsonPropertyName("Extraversion")]
+        public int Extraversion { get; set; }
+
+        [JsonPropertyName("Neuroticism")]
+        public int Neuroticism { get; set; }
+
+        [JsonPropertyName("Openness")]
+        public int Openness { get; set; }
     }
 
     internal class ExperienceTableModel
