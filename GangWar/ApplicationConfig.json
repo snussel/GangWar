@@ -2,6 +2,8 @@
   "application": {
     "debugMode": false,
     "outputPath": "e:\\data\\gangwar\\output",
-    "sourcePath": "e:\\data\\gangwar\\input"
+    "sourcePath": "e:\\data\\gangwar\\input",
+    "minDieRoll": 1,
+    "maxDieRoll": 8
   }
 }

@@ -89,7 +89,7 @@ namespace GangWar
 
             for (int i = 1; i <= numBattles; i++)
             {
-                int randomNumber = _rand.Next(1, 9);
+                int randomNumber = _rand.Next(AppConfig.MinDieRoll, AppConfig.MaxDieRoll + 1);
                 Console.Write($"Roll: {i.ToString().PadLeft(2, '0')} - {character.XP,3}");
 
                 //Get the current level of the PC
@@ -109,7 +109,7 @@ namespace GangWar
                         Console.Write($"\tRank Up {z} ");
 
                         //determine the result roll
-                        int advanceRoll = int.Parse($"{_rand.Next(1, 9)}{_rand.Next(1, 9)}");
+                        int advanceRoll = int.Parse($"{_rand.Next(AppConfig.MinDieRoll, AppConfig.MaxDieRoll + 1)}{_rand.Next(AppConfig.MinDieRoll, AppConfig.MaxDieRoll + 1)}");
 
                         //Get the result
                         var advanceResult = listOfAdvancements.FirstOrDefault(x => advanceRoll >= x.Min && advanceRoll <= x.Max);
@@ -137,6 +137,12 @@ namespace GangWar
                 //Update XP total
                 character.XP = newXP;
 
+                //If the person got the min or max XP adjust personality accordingly
+                if (randomNumber.Equals(AppConfig.MinDieRoll))
+                    UpdateRandomPersonalityTrait(ref character, maxValues.Personality, false);
+                else if (randomNumber.Equals(AppConfig.MaxDieRoll))
+                    UpdateRandomPersonalityTrait(ref character, maxValues.Personality, true);
+
                 //Stop looping if the charachter is already max level
                 if (character.XP > maxXP) { break; }
             }
@@ -146,6 +152,40 @@ namespace GangWar
                 character.ListOfSkills = null;
 
             return character;
+        }
+        
+        /// <summary>
+        /// Method to update a random personality trait
+        /// </summary>
+        /// <param name="character">The values of the character</param>
+        /// <param name="maxValues">The max values</param>
+        /// <param name="isGood">If the trait is to be increased or decreased</param>
+        private static void UpdateRandomPersonalityTrait(ref CharacterModel character, PersonalityModel maxValues, bool isGood)
+        {
+            bool isUpdated = false;
+
+            while (isUpdated.Equals(false))
+            {
+                var values = character.Personality.GetType().GetProperties();
+                var updateMe = values[_rand.Next(values.Length)];
+                int isMax = (int)maxValues.GetType().GetProperty(updateMe.Name).GetValue(maxValues);
+
+                if ((int)updateMe.GetValue(character.Personality, null) <= isMax)
+                {
+                    if (isGood)
+                    {
+                        updateMe.SetValue(character.Personality, (int)updateMe.GetValue(character.Personality, null) + 1);
+                        ColorText($"\tIncreased: {updateMe.Name}", ConsoleColor.Blue);
+                        isUpdated = true;
+                    }
+                    else
+                    {
+                        updateMe.SetValue(character.Personality, (int)updateMe.GetValue(character.Personality, null) - 1);
+                        ColorText($"\tDecreased: {updateMe.Name}", ConsoleColor.Blue);
+                        isUpdated = true;
+                    }
+                }
+            }
         }
 
         /// <summary>
@@ -161,7 +201,7 @@ namespace GangWar
 
             while (isUpdated.Equals(false))
             {
-                int skillRoll = _rand.Next(7);
+                int skillRoll = _rand.Next(releventSkills.Count);
 
                 skill = releventSkills[skillRoll];
 
@@ -182,6 +222,7 @@ namespace GangWar
         {
             bool isUpdated = false;
 
+            //ToDo: Clean this up, there has to be a better way
             while (isUpdated.Equals(false))
             {
                 switch (charisticToUpdate)
@@ -353,7 +394,7 @@ namespace GangWar
             foreach(var trait in returnMe.GetType().GetProperties())
             {
                 int maxVal = (int)properties.FirstOrDefault(x => x.Name.Equals(trait.Name)).GetValue(personality, null);
-                trait.SetValue(returnMe, _rand.Next(1, maxVal + 1));
+                trait.SetValue(returnMe, _rand.Next(4, 8));
             }
 
             return returnMe;

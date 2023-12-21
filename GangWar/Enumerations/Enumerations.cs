@@ -50,6 +50,7 @@ namespace GangWar.Enumerations
         [Description("This is a test")]
         BasicConsumible,
         Grenade,
+        Potion,
         [EnumMember(Value = "Basic Other")]
         [Description("This is a test")]
         BasicOther

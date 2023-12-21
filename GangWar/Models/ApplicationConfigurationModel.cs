@@ -12,5 +12,11 @@ namespace GangWar.Models
 
         [JsonPropertyName("debugMode")]
         public bool DebugMode { get; set; }
+
+        [JsonPropertyName("minDieRoll")]
+        public int MinDieRoll { get; set; }
+
+        [JsonPropertyName("maxDieRoll")]
+        public int MaxDieRoll { get; set; }
     }
 }

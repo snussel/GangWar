@@ -1,6 +1,5 @@
 ﻿using GangWar.Enumerations;
 using GangWar.Models;
-using System.Security.Cryptography;
 
 namespace GangWar
 {
