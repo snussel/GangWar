@@ -15,8 +15,11 @@ namespace GangWar.Models
         [JsonPropertyName("description")]
         public string Description { get; set; }
 
-        [JsonPropertyName("eType")]
-        public EquipmentType EType { get; set; }
+        [JsonPropertyName("equipmentMainType")]
+        public EquipmentType EquipmentMainType { get; set; }
+
+        [JsonPropertyName("equipmentSubType")]
+        public EquipmentSubType EquipmentSubType { get; set; }
 
         [JsonPropertyName("price")]
         public int Price { get; set; }
@@ -31,7 +34,7 @@ namespace GangWar.Models
         public QualityLevels LevelOfQuality { get; set; }
 
         [JsonPropertyName("traits")]
-        public List<TraitModel> Traits { get; } = new();
+        public List<TraitModel> Traits { get; set; } = new();
     }
 
     public class TraitModel

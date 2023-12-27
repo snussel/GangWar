@@ -73,17 +73,17 @@ namespace GangWar
 
                 sw.WriteLine();
                 WriteHeader(sw, "Equipment");
-                foreach (var item in character.ListOfEquipment.OrderBy(x => x.EType).ThenBy(y => y.EquipmentId))
+                foreach (var item in character.ListOfEquipment.OrderBy(x => x.EquipmentMainType).ThenBy(y => y.EquipmentId))
                 {
                     sw.WriteLine($"│ Name       : {item.Name}");
-                    sw.WriteLine($"│ Type       : {item.EType}");
+                    sw.WriteLine($"│ Type       : {item.EquipmentMainType}");
                     sw.WriteLine($"│ Price      : {item.Price}");
                     sw.WriteLine($"│ Description: {item.Description}");
 
                     if (item.Range != 0)
                         sw.WriteLine($"│ Range      : {item.Range}");
 
-                    sw.WriteLine($"│ {GetDiceType(item.EType),6}     : {item.NumDice}");
+                    sw.WriteLine($"│ {GetDiceType(item.EquipmentMainType),6}     : {item.NumDice}");
 
                     if (item.Traits is not null)
                     {
@@ -94,7 +94,7 @@ namespace GangWar
                         }
                     }
 
-                    if (character.ListOfEquipment.OrderBy(x => x.EType).ThenBy(y => y.EquipmentId).Last().Equals(item))
+                    if (character.ListOfEquipment.OrderBy(x => x.EquipmentMainType).ThenBy(y => y.EquipmentId).Last().Equals(item))
                     {
                         //do notthing
                     }
@@ -148,7 +148,7 @@ namespace GangWar
             }
 
             Console.WriteLine("| Equipment:                        |");
-            foreach (var item in newPC.ListOfEquipment.OrderBy(x => x.EType).ThenBy(y => y.EquipmentId))
+            foreach (var item in newPC.ListOfEquipment.OrderBy(x => x.EquipmentMainType).ThenBy(y => y.EquipmentId))
             {
                 Console.WriteLine($"| {item.EquipmentId,-9} {item.Name,23} |");
             }

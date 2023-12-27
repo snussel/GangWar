@@ -17,10 +17,26 @@ namespace GangWar.Enumerations
 
     public enum EquipmentType 
     { 
-        Armor,
-        Weapon,
-        Consumable,
-        Other
+        Armor = 1,
+        Weapon = 2,
+        Consumable = 3,
+        Other = 4
+    }
+
+    public enum EquipmentSubType
+    {
+        Heavy = 10,
+        Medium = 11,
+        Light = 12,
+        Sword = 21,
+        Axe = 22,
+        Hammer = 23,
+        Polearm = 24,
+        Bow = 25,
+        Crossbow = 26,
+        Grenade = 31,
+        Potion = 32
+
     }
 
     public enum QualityLevels 
@@ -34,18 +50,22 @@ namespace GangWar.Enumerations
 
     public enum TraitType
     {
+        Basic = 0,
+
         [EnumMember(Value = "Basic Melee")]
         [Description("This is a test")]
-        BasicMelee,
-        Sword,
-        Axe,
-        Hammer,
-        Polearm,
-        [EnumMember(Value = "Basic Ranged")]
+        BasicArmor = 1,
+        
+        [EnumMember(Value = "Basic Melee")]
         [Description("This is a test")]
-        BasicRanged,
+        BasicMelee = 20,
+        Sword = 21,
+        Axe  = 4,
+        Hammer = 5,
+        Polearm = 6,
         Bow,
         Crossbow,
+
         [EnumMember(Value = "Basic Consumible")]
         [Description("This is a test")]
         BasicConsumible,

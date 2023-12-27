@@ -18,7 +18,7 @@ namespace GangWar
             if (LoadConfig())
             {
                 //
-                SeedConfigValues.SeedJsonValues(new char[] { 'T' }, AppConfig.SourcePath);
+                SeedConfigValues.SeedJsonValues(new char[] { 'E', 'T' }, AppConfig.SourcePath);
 
                 SquadModel thisSquad = new()
                 {
@@ -310,16 +310,22 @@ namespace GangWar
 
             //Randomly determine equipment
             foreach (var item in args)
-            {
-                //
-                var listPotential = allItems.Where(x => x.EType.Equals(item)).ToList();
+            {               
 
                 //
-                int index = _rand.Next(listPotential.Count);
+                var listPotential = allItems.Where(x => x.EquipmentMainType.Equals(item)).ToList();                
+
+                EquipmentModel temp = listPotential[_rand.Next(listPotential.Count)];
 
                 //
-                Console.WriteLine($"{listPotential[index].EType} - {listPotential[index].Name}");
-                returnMe.Add(listPotential[index]);
+                Console.WriteLine($"{temp.EquipmentMainType} - {temp.Name}");
+
+                int eType = Convert.ToInt32($"{(int)temp.EquipmentMainType}{(int)temp.EquipmentSubType}");
+
+                temp.Traits = DetermineTraits((int)maxQuality, allTraits.Where(x => x.TypeOfTrait.Equals((int)temp.EquipmentMainType) || x.TypeOfTrait.Equals(eType)).ToList());
+
+
+                returnMe.Add(temp);
             }
 
             foreach(var item in returnMe)
