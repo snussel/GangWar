@@ -6,9 +6,9 @@
       "numBattles": 5,
       "cost": 15,
       "startingEquipment": [
-        0,
         1,
-        2
+        2,
+        3
       ],
       "maxQuality": 1
     },
@@ -18,11 +18,11 @@
       "numBattles": 15,
       "cost": 50,
       "startingEquipment": [
-        0,
         1,
         1,
         2,
-        2
+        2,
+        3
       ],
       "maxQuality": 2
     },
@@ -32,12 +32,12 @@
       "numBattles": 25,
       "cost": 100,
       "startingEquipment": [
-        0,
         1,
         1,
         2,
         2,
-        3
+        3,
+        4
       ],
       "maxQuality": 3
     }

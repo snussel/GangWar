@@ -1,251 +1,182 @@
 [
   {
     "equipmentId": 1,
-    "name": "",
-    "description": "",
-    "eType": 0,
-    "equipmentAttributes": {
-      "numDiceSaved": 1,
-      "traits": [
-        "Light"
-      ]
-    }
+    "name": "Light Armor",
+    "description": "Made of cloth and bits of leather",
+    "equipmentMainType": 1,
+    "equipmentSubType": 12,
+    "price": 2,
+    "numDice": 1,
+    "range": 0,
+    "levelOfQuality": 0,
+    "traits": []
   },
   {
     "equipmentId": 2,
-    "name": "",
-    "description": "",
-    "eType": 0,
-    "equipmentAttributes": {
-      "numDiceSaved": 2,
-      "traits": [
-        "Medium"
-      ]
-    }
+    "name": "Medium Armor",
+    "description": "Standard armor, that might be made of tanned hides and a bit of metal mixed in",
+    "equipmentMainType": 1,
+    "equipmentSubType": 11,
+    "price": 2,
+    "numDice": 2,
+    "range": 0,
+    "levelOfQuality": 0,
+    "traits": []
   },
   {
     "equipmentId": 3,
-    "name": "",
-    "description": "",
-    "eType": 0,
-    "equipmentAttributes": {
-      "numDiceSaved": 3,
-      "traits": [
-        "Heavy"
-      ]
-    }
+    "name": "Heavy Armor",
+    "description": "Most protective armor, made mostly of metal",
+    "equipmentMainType": 1,
+    "equipmentSubType": 10,
+    "price": 2,
+    "numDice": 3,
+    "range": 0,
+    "levelOfQuality": 0,
+    "traits": []
   },
   {
     "equipmentId": 4,
-    "name": "",
-    "description": "",
-    "eType": 0,
-    "equipmentAttributes": {
-      "numDiceSaved": 2,
-      "traits": [
-        "Medium",
-        "Ridged"
-      ]
-    }
+    "name": "Knife",
+    "description": "Basic melee weapon",
+    "equipmentMainType": 2,
+    "equipmentSubType": 0,
+    "price": 0,
+    "numDice": 1,
+    "range": 4,
+    "levelOfQuality": 0,
+    "traits": []
   },
   {
     "equipmentId": 5,
-    "name": "",
-    "description": "",
-    "eType": 1,
-    "equipmentAttributes": {
-      "numDiceDamage": 2,
-      "traits": [
-        "Light"
-      ]
-    }
+    "name": "Sword",
+    "description": "Bread and butter melee weapon",
+    "equipmentMainType": 2,
+    "equipmentSubType": 0,
+    "price": 2,
+    "numDice": 3,
+    "range": 0,
+    "levelOfQuality": 0,
+    "traits": []
   },
   {
     "equipmentId": 6,
-    "name": "",
+    "name": "Axe",
     "description": "",
-    "eType": 1,
-    "equipmentAttributes": {
-      "numDiceDamage": 3,
-      "traits": [
-        "Light"
-      ]
-    }
+    "equipmentMainType": 2,
+    "equipmentSubType": 0,
+    "price": 2,
+    "numDice": 1,
+    "range": 0,
+    "levelOfQuality": 0,
+    "traits": []
   },
   {
     "equipmentId": 7,
-    "name": "",
+    "name": "Crossbow",
     "description": "",
-    "eType": 1,
-    "equipmentAttributes": {
-      "numDiceDamage": 3,
-      "traits": [
-        "Light"
-      ]
-    }
+    "equipmentMainType": 2,
+    "equipmentSubType": 0,
+    "price": 2,
+    "numDice": 1,
+    "range": 4,
+    "levelOfQuality": 0,
+    "traits": []
   },
   {
     "equipmentId": 8,
-    "name": "",
+    "name": "Short Bow",
     "description": "",
-    "eType": 1,
-    "equipmentAttributes": {
-      "numDiceDamage": 2,
-      "traits": [
-        "Light"
-      ]
-    }
+    "equipmentMainType": 2,
+    "equipmentSubType": 0,
+    "price": 2,
+    "numDice": 1,
+    "range": 4,
+    "levelOfQuality": 0,
+    "traits": []
   },
   {
     "equipmentId": 9,
-    "name": "",
+    "name": "Long Bow",
     "description": "",
-    "eType": 1,
-    "equipmentAttributes": {
-      "numDiceDamage": 1,
-      "traits": [
-        "Light"
-      ]
-    }
+    "equipmentMainType": 2,
+    "equipmentSubType": 0,
+    "price": 3,
+    "numDice": 1,
+    "range": 8,
+    "levelOfQuality": 0,
+    "traits": []
   },
   {
     "equipmentId": 10,
-    "name": "",
-    "description": "",
-    "eType": 1,
-    "equipmentAttributes": {
-      "numDiceDamage": 2,
-      "traits": [
-        "Light"
-      ]
-    }
+    "name": "Smoke",
+    "description": "Grenade",
+    "equipmentMainType": 3,
+    "equipmentSubType": 0,
+    "price": 1,
+    "numDice": 1,
+    "range": 4,
+    "levelOfQuality": 0,
+    "traits": []
   },
   {
     "equipmentId": 11,
-    "name": "",
-    "description": "",
-    "eType": 1,
-    "equipmentAttributes": {
-      "numDiceDamage": 2,
-      "traits": [
-        "Light"
-      ]
-    }
+    "name": "Fire",
+    "description": "Grenade",
+    "equipmentMainType": 3,
+    "equipmentSubType": 0,
+    "price": 1,
+    "numDice": 1,
+    "range": 4,
+    "levelOfQuality": 0,
+    "traits": []
   },
   {
     "equipmentId": 12,
-    "name": "",
-    "description": "",
-    "eType": 1,
-    "equipmentAttributes": {
-      "numDiceDamage": 2,
-      "traits": [
-        "Light"
-      ]
-    }
+    "name": "Schrapnel",
+    "description": "Grenade",
+    "equipmentMainType": 3,
+    "equipmentSubType": 0,
+    "price": 1,
+    "numDice": 1,
+    "range": 4,
+    "levelOfQuality": 0,
+    "traits": []
   },
   {
     "equipmentId": 13,
-    "name": "",
-    "description": "",
-    "eType": 2,
-    "equipmentAttributes": {
-      "numUses": 1,
-      "numDice": 3,
-      "traits": [
-        "Gas"
-      ]
-    }
+    "name": "Medical Pack",
+    "description": "Try to heal one\u0027s self",
+    "equipmentMainType": 3,
+    "equipmentSubType": 0,
+    "price": 1,
+    "numDice": 1,
+    "range": 0,
+    "levelOfQuality": 0,
+    "traits": []
   },
   {
     "equipmentId": 14,
-    "name": "",
+    "name": "Lock Picks",
     "description": "",
-    "eType": 2,
-    "equipmentAttributes": {
-      "numUses": 1,
-      "numDice": 3,
-      "traits": [
-        "Gas"
-      ]
-    }
+    "equipmentMainType": 4,
+    "equipmentSubType": 0,
+    "price": 10,
+    "numDice": 1,
+    "range": 0,
+    "levelOfQuality": 0,
+    "traits": []
   },
   {
     "equipmentId": 15,
-    "name": "",
+    "name": "Mule",
     "description": "",
-    "eType": 2,
-    "equipmentAttributes": {
-      "numUses": 1,
-      "numDice": 3,
-      "traits": [
-        "Gas"
-      ]
-    }
-  },
-  {
-    "equipmentId": 16,
-    "name": "",
-    "description": "",
-    "eType": 2,
-    "equipmentAttributes": {
-      "numUses": 1,
-      "numDice": 3,
-      "traits": [
-        "Gas"
-      ]
-    }
-  },
-  {
-    "equipmentId": 17,
-    "name": "",
-    "description": "",
-    "eType": 2,
-    "equipmentAttributes": {
-      "numUses": 1,
-      "numDice": 3,
-      "traits": [
-        "Gas"
-      ]
-    }
-  },
-  {
-    "equipmentId": 18,
-    "name": "",
-    "description": "",
-    "eType": 2,
-    "equipmentAttributes": {
-      "numUses": 1,
-      "numDice": 3,
-      "traits": [
-        "Gas"
-      ]
-    }
-  },
-  {
-    "equipmentId": 19,
-    "name": "",
-    "description": "",
-    "eType": 2,
-    "equipmentAttributes": {
-      "numUses": 1,
-      "numDice": 3,
-      "traits": [
-        "Gas"
-      ]
-    }
-  },
-  {
-    "equipmentId": 20,
-    "name": "",
-    "description": "",
-    "eType": 2,
-    "equipmentAttributes": {
-      "numUses": 1,
-      "numDice": 3,
-      "traits": [
-        "Gas"
-      ]
-    }
+    "equipmentMainType": 4,
+    "equipmentSubType": 0,
+    "price": 100,
+    "numDice": 3,
+    "range": 0,
+    "levelOfQuality": 0,
+    "traits": []
   }
 ]

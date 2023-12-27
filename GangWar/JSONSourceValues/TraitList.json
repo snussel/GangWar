@@ -1,0 +1,626 @@
+[
+  {
+    "traitID": 1,
+    "name": "Basic",
+    "description": "One free level or repair",
+    "typeOfTrait": 1
+  },
+  {
+    "traitID": 2,
+    "name": "Usefull",
+    "description": "May draw light items as a free action",
+    "typeOfTrait": 1
+  },
+  {
+    "traitID": 3,
+    "name": "Cumbersome",
+    "description": "Trait maximum for all movement tests is 4\u0022",
+    "typeOfTrait": 1
+  },
+  {
+    "traitID": 4,
+    "name": "Robust",
+    "description": "Reroll one failed save, must take the second result",
+    "typeOfTrait": 1
+  },
+  {
+    "traitID": 5,
+    "name": "Light",
+    "description": "Can be thrown",
+    "typeOfTrait": 1
+  },
+  {
+    "traitID": 6,
+    "name": "Versitile",
+    "description": "",
+    "typeOfTrait": 1
+  },
+  {
+    "traitID": 7,
+    "name": "Slow",
+    "description": "",
+    "typeOfTrait": 1
+  },
+  {
+    "traitID": 8,
+    "name": "Capacity(4)",
+    "description": "",
+    "typeOfTrait": 1
+  },
+  {
+    "traitID": 9,
+    "name": "Basic",
+    "description": "One free level or repair",
+    "typeOfTrait": 20
+  },
+  {
+    "traitID": 10,
+    "name": "Usefull",
+    "description": "May draw light items as a free action",
+    "typeOfTrait": 20
+  },
+  {
+    "traitID": 11,
+    "name": "Cumbersome",
+    "description": "Trait maximum for all movement tests is 4\u0022",
+    "typeOfTrait": 20
+  },
+  {
+    "traitID": 12,
+    "name": "Robust",
+    "description": "Reroll one failed save, must take the second result",
+    "typeOfTrait": 20
+  },
+  {
+    "traitID": 13,
+    "name": "Light",
+    "description": "Can be thrown",
+    "typeOfTrait": 20
+  },
+  {
+    "traitID": 14,
+    "name": "Versitile",
+    "description": "",
+    "typeOfTrait": 20
+  },
+  {
+    "traitID": 15,
+    "name": "Slow",
+    "description": "",
+    "typeOfTrait": 20
+  },
+  {
+    "traitID": 16,
+    "name": "Capacity(4)",
+    "description": "",
+    "typeOfTrait": 20
+  },
+  {
+    "traitID": 17,
+    "name": "Gas",
+    "description": "",
+    "typeOfTrait": 4
+  },
+  {
+    "traitID": 18,
+    "name": "Liquid",
+    "description": "",
+    "typeOfTrait": 4
+  },
+  {
+    "traitID": 19,
+    "name": "Explosive",
+    "description": "",
+    "typeOfTrait": 4
+  },
+  {
+    "traitID": 20,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 4
+  },
+  {
+    "traitID": 21,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 4
+  },
+  {
+    "traitID": 22,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 4
+  },
+  {
+    "traitID": 23,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 4
+  },
+  {
+    "traitID": 24,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 4
+  },
+  {
+    "traitID": 25,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 21
+  },
+  {
+    "traitID": 26,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 21
+  },
+  {
+    "traitID": 27,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 21
+  },
+  {
+    "traitID": 28,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 21
+  },
+  {
+    "traitID": 29,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 21
+  },
+  {
+    "traitID": 30,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 21
+  },
+  {
+    "traitID": 31,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 21
+  },
+  {
+    "traitID": 32,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 21
+  },
+  {
+    "traitID": 33,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 5
+  },
+  {
+    "traitID": 34,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 5
+  },
+  {
+    "traitID": 35,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 5
+  },
+  {
+    "traitID": 36,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 5
+  },
+  {
+    "traitID": 37,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 5
+  },
+  {
+    "traitID": 38,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 5
+  },
+  {
+    "traitID": 39,
+    "name": "Placeholder Placeholder ",
+    "description": "",
+    "typeOfTrait": 5
+  },
+  {
+    "traitID": 40,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 5
+  },
+  {
+    "traitID": 41,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 6
+  },
+  {
+    "traitID": 42,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 6
+  },
+  {
+    "traitID": 43,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 6
+  },
+  {
+    "traitID": 44,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 6
+  },
+  {
+    "traitID": 45,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 6
+  },
+  {
+    "traitID": 46,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 6
+  },
+  {
+    "traitID": 47,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 6
+  },
+  {
+    "traitID": 48,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 6
+  },
+  {
+    "traitID": 49,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 7
+  },
+  {
+    "traitID": 50,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 7
+  },
+  {
+    "traitID": 51,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 7
+  },
+  {
+    "traitID": 52,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 7
+  },
+  {
+    "traitID": 53,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 7
+  },
+  {
+    "traitID": 54,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 7
+  },
+  {
+    "traitID": 55,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 7
+  },
+  {
+    "traitID": 56,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 7
+  },
+  {
+    "traitID": 57,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 8
+  },
+  {
+    "traitID": 58,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 8
+  },
+  {
+    "traitID": 59,
+    "name": "Placeholder ",
+    "description": "Placeholder ",
+    "typeOfTrait": 8
+  },
+  {
+    "traitID": 60,
+    "name": "Placeholder ",
+    "description": "Placeholder ",
+    "typeOfTrait": 8
+  },
+  {
+    "traitID": 61,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 8
+  },
+  {
+    "traitID": 62,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 8
+  },
+  {
+    "traitID": 63,
+    "name": "Placeholder ",
+    "description": "Placeholder ",
+    "typeOfTrait": 8
+  },
+  {
+    "traitID": 64,
+    "name": "Placeholder ",
+    "description": "Placeholder ",
+    "typeOfTrait": 8
+  },
+  {
+    "traitID": 65,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 9
+  },
+  {
+    "traitID": 66,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 9
+  },
+  {
+    "traitID": 67,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 9
+  },
+  {
+    "traitID": 68,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 9
+  },
+  {
+    "traitID": 69,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 9
+  },
+  {
+    "traitID": 70,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 9
+  },
+  {
+    "traitID": 71,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 9
+  },
+  {
+    "traitID": 72,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 9
+  },
+  {
+    "traitID": 73,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 10
+  },
+  {
+    "traitID": 74,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 10
+  },
+  {
+    "traitID": 75,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 10
+  },
+  {
+    "traitID": 76,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 10
+  },
+  {
+    "traitID": 77,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 10
+  },
+  {
+    "traitID": 78,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 10
+  },
+  {
+    "traitID": 79,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 10
+  },
+  {
+    "traitID": 80,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 10
+  },
+  {
+    "traitID": 81,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 11
+  },
+  {
+    "traitID": 82,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 11
+  },
+  {
+    "traitID": 83,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 11
+  },
+  {
+    "traitID": 84,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 11
+  },
+  {
+    "traitID": 85,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 11
+  },
+  {
+    "traitID": 86,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 11
+  },
+  {
+    "traitID": 87,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 11
+  },
+  {
+    "traitID": 88,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 11
+  },
+  {
+    "traitID": 89,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 12
+  },
+  {
+    "traitID": 90,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 12
+  },
+  {
+    "traitID": 91,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 12
+  },
+  {
+    "traitID": 92,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 12
+  },
+  {
+    "traitID": 93,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 12
+  },
+  {
+    "traitID": 94,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 12
+  },
+  {
+    "traitID": 95,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 12
+  },
+  {
+    "traitID": 96,
+    "name": "Placeholder ",
+    "description": "",
+    "typeOfTrait": 12
+  },
+  {
+    "traitID": 97,
+    "name": "Placeholder 1",
+    "description": "",
+    "typeOfTrait": 13
+  },
+  {
+    "traitID": 98,
+    "name": "Placeholder 2",
+    "description": "",
+    "typeOfTrait": 13
+  },
+  {
+    "traitID": 99,
+    "name": "Placeholder 3",
+    "description": "",
+    "typeOfTrait": 13
+  },
+  {
+    "traitID": 100,
+    "name": "Placeholder 4",
+    "description": "",
+    "typeOfTrait": 13
+  },
+  {
+    "traitID": 101,
+    "name": "Placeholder 5",
+    "description": "",
+    "typeOfTrait": 13
+  },
+  {
+    "traitID": 102,
+    "name": "Placeholder 6",
+    "description": "",
+    "typeOfTrait": 13
+  },
+  {
+    "traitID": 103,
+    "name": "Placeholder 7",
+    "description": "",
+    "typeOfTrait": 13
+  },
+  {
+    "traitID": 104,
+    "name": "Placeholder 8",
+    "description": "",
+    "typeOfTrait": 13
+  }
+]

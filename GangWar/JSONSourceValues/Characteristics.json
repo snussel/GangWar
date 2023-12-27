@@ -5,10 +5,17 @@
     "melee": 4,
     "range": 4,
     "strength": 4,
-    "toughness": 2,    
+    "toughness": 2,
     "alertness": 4,
     "charisma": 4,
-    "speed": 4
+    "speed": 4,
+    "personality": {
+      "Agreeableness": 1,
+      "Conscientiousness": 1,
+      "Extraversion": 1,
+      "Neuroticism": 1,
+      "Openness": 1
+    }
   },
   {
     "type": "Max",
@@ -16,9 +23,16 @@
     "melee": 8,
     "range": 8,
     "strength": 8,
-    "toughness": 7,    
+    "toughness": 7,
     "alertness": 7,
     "charisma": 9,
-    "speed": 7
+    "speed": 7,
+    "personality": {
+      "Agreeableness": 10,
+      "Conscientiousness": 10,
+      "Extraversion": 10,
+      "Neuroticism": 10,
+      "Openness": 10
+    }
   }
 ]
