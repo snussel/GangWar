@@ -1,130 +1,130 @@
 [
   {
-    "rollID": 1,
+    "aType": true,
+    "max": 72,
     "min": 71,
-	"max": 72,
-    "updateItem": 1,
-    "aType": true,
-    "notes": "Move"
+    "notes": "Move",
+    "rollID": 1,
+    "updateItem": 1
   },
   {
-    "rollID": 2,
+    "aType": true,
+    "max": 74,
     "min": 73,
-	"max": 74,
-    "updateItem": 2,
-    "aType": true,
-    "notes": "Melee"
+    "notes": "Melee",
+    "rollID": 2,
+    "updateItem": 2
   },
   {
-    "rollID": 3,
+    "aType": true,
+    "max": 76,
     "min": 75,
-	"max": 76,
-    "updateItem": 3,
-    "aType": true,
-    "notes": "Ranged"
+    "notes": "Ranged",
+    "rollID": 3,
+    "updateItem": 3
   },
   {
-    "rollID": 4,
+    "aType": true,
+    "max": 78,
     "min": 77,
-	"max": 78,
-    "updateItem": 4,
-    "aType": true,
-    "notes": "Strength"
+    "notes": "Strength",
+    "rollID": 4,
+    "updateItem": 4
   },
   {
-    "rollID": 5,
+    "aType": true,
+    "max": 82,
     "min": 81,
-	"max": 82,
-    "updateItem": 5,
-    "aType": true,
-    "notes": "Toughness"
+    "notes": "Toughness",
+    "rollID": 5,
+    "updateItem": 5
   },
   {
-    "rollID": 6,
+    "aType": true,
+    "max": 84,
     "min": 83,
-	"max": 84,
-    "updateItem": 6,
-    "aType": true,
-    "notes": "Alertness"
+    "notes": "Alertness",
+    "rollID": 6,
+    "updateItem": 6
   },
   {
-    "rollID": 7,
+    "aType": true,
+    "max": 86,
     "min": 85,
-	"max": 86,
-    "updateItem": 7,
-    "aType": true,
-    "notes": "Charisma"
+    "notes": "Charisma",
+    "rollID": 7,
+    "updateItem": 7
   },
-    {
-    "rollID": 8,
+  {
+    "aType": true,
+    "max": 88,
     "min": 87,
-	"max": 88,
-    "updateItem": 8,
-    "aType": true,
-    "notes": "Speed"
+    "notes": "Speed",
+    "rollID": 8,
+    "updateItem": 8
   },
   {
-    "rollID": 9,
+    "aType": false,
+    "max": 24,
     "min": 17,
-	"max": 24,
-    "updateItem": 2,
-    "aType": false,
-    "notes": "Melee"
+    "notes": "Melee",
+    "rollID": 9,
+    "updateItem": 2
   },
   {
-    "rollID": 10,
+    "aType": false,
+    "max": 32,
     "min": 25,
-	"max": 32,
-    "updateItem": 3,
-    "aType": false,
-    "notes": "Ranged"
+    "notes": "Ranged",
+    "rollID": 10,
+    "updateItem": 3
   },
   {
-    "rollID": 11,
+    "aType": false,
+    "max": 38,
     "min": 33,
-	"max": 38,
-    "updateItem": 4,
-    "aType": false,
-    "notes": "Strength"
+    "notes": "Strength",
+    "rollID": 11,
+    "updateItem": 4
   },
   {
-    "rollID": 12,
+    "aType": false,
+    "max": 16,
     "min": 11,
-	"max": 16,
-    "updateItem": 1,
-    "aType": false,
-    "notes": "Move"
+    "notes": "Move",
+    "rollID": 12,
+    "updateItem": 1
   },
   {
-    "rollID": 13,
+    "aType": false,
+    "max": 68,
     "min": 63,
-	"max": 68,
-    "updateItem": 8,
-    "aType": false,
-    "notes": "Speed"
+    "notes": "Speed",
+    "rollID": 13,
+    "updateItem": 8
   },
   {
-    "rollID": 14,
+    "aType": false,
+    "max": 46,
     "min": 41,
-	"max": 46,
-    "updateItem": 5,
-    "aType": false,
-    "notes": "Toughness"
+    "notes": "Toughness",
+    "rollID": 14,
+    "updateItem": 5
   },
   {
-    "rollID": 15,
+    "aType": false,
+    "max": 54,
     "min": 47,
-	"max": 54,
-    "updateItem": 6,
-    "aType": false,
-    "notes": "Alertness"
+    "notes": "Alertness",
+    "rollID": 15,
+    "updateItem": 6
   },
   {
-    "rollID": 16,
-    "min": 55,
-	"max": 62,
-    "updateItem": 7,
     "aType": false,
-    "notes": "Charisma"
+    "max": 62,
+    "min": 55,
+    "notes": "Charisma",
+    "rollID": 16,
+    "updateItem": 7
   }
 ]
